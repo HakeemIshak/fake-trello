@@ -1,0 +1,65 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+b {
+    font-size: 12px;
+}
+
+p {
+    margin: 0;
+    font-size: 12px;
+}
+
+#layout {
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    justify-content: center;
+
+    width: 80%;
+    min-height: 100%;
+    margin: 0 auto;
+}
+
+#layout .column {
+    width: 30%;
+    margin: 0 15px;
+    min-height: 100%;
+    border: 2px dashed gray;
+}
+
+#layout .column > div {
+    height: 100%;
+}
+
+#layout .column .card {
+    position: relative;
+    background-color: gray;
+    width: 100%;
+    min-height: 150px;
+    margin: 10px 0;
+}
+
+#layout .column .card input {
+    outline: none;
+}
+
+#layout .column .card input.error {
+    border: 2px solid red;
+}
+
+#layout .column .card .hidden {
+    display: none;
+}
+
+#layout .column .card .action {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+}
